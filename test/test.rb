@@ -1,6 +1,6 @@
 require_relative '../config/environment'
 include Helpers
-require 'pry'
+# require 'pry'
 
 player1 = Player.new
 player2 = Player.new

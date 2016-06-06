@@ -1,4 +1,3 @@
-require 'pry'
 class Player < ActiveRecord::Base
   has_many :cards
   has_many :held_cards, through: :cards
@@ -70,7 +69,7 @@ class Player < ActiveRecord::Base
 
   def play_card(card, game_id)
     opponent = find_opp(game_id)
-    
+
     self.castle += card.own_castle.to_i
     self.shield += card.own_shield.to_i
     self.save
@@ -101,7 +100,7 @@ class Player < ActiveRecord::Base
 
     self.save
     opponent.save
-    
+
   end
 
   def regen_resources

@@ -1,5 +1,9 @@
 require_relative './actions/rocketio'
 
+get '/' do
+  redirect 'games/new'
+end
+
 #'/games/new' is the entry point. A new player is created when you visit. Your player ID is stored as a session cookie.
 get '/games/new' do
 

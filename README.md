@@ -1,8 +1,7 @@
-Sinatra
+Three Towers - A Game
 =============
 
-
-Brought to you by Lighthouse Labs
+This game was made over 5 days as a midterm group project for Lighthouse Labs. I was responsible for all of the front-end gameplay code, most of the CSS and HTML, integrating websockets with rocket.io, and some backend coding.
 
 ## Getting Started
 

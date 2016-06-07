@@ -15,7 +15,9 @@ gem 'thin'
 gem 'puma'
 gem 'tux'
 
-gem 'pg'
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   gem 'pry'

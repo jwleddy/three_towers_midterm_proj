@@ -4,6 +4,9 @@ configure do
     ActiveRecord::Base.logger = Logger.new(STDOUT)
   end
 
+puts 'database url:'
+puts ENV['DATABASE_URL']
+
 if development?
   set :database, {
     adapter: "sqlite3",
